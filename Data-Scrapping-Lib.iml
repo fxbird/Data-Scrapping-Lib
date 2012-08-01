@@ -9,6 +9,11 @@
     <libelement value="jar://$MODULE_DIR$/lib/httpclient-cache-4.2.1.jar!/" />
     <libelement value="jar://$MODULE_DIR$/lib/httpcore-4.2.1.jar!/" />
     <libelement value="jar://$MODULE_DIR$/lib/httpmime-4.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/commons-io-1.4-sources.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/commons-lang-2.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/dom4j-1.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/junit.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/log4j-1.2.16.jar!/" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
     </src_description>
@@ -94,8 +99,53 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-io-1.4-sources.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/commons-io-1.4-sources.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-lang-2.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/commons-lang-2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dom4j-1.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/dom4j-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/junit.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="log4j-1.2.16.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/log4j-1.2.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="module" module-name="Bird_Common_Lib" />
-    <orderEntry type="library" name="lib (6)" level="project" />
+    <orderEntry type="library" name="lib (5)" level="project" />
   </component>
 </module>
 

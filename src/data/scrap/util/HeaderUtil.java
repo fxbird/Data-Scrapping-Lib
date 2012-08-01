@@ -24,7 +24,8 @@ public class HeaderUtil {
     public static boolean isFile(HttpResponse response) {
         printHeaders(response);
         String[] downloadable = {"application/octet-stream", "application/pdf",
-                "application/zip", "application/x-gzip", "application/x-zip-compressed"};
+                "application/zip", "application/x-gzip", "application/x-zip-compressed",
+        "application/x-javascript"};
         String contentType = response.getHeaders("Content-Type")[0].getValue().toLowerCase();
         if (ArrayUtil.contains(contentType, downloadable)) {
             return true;

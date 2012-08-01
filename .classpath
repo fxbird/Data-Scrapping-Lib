@@ -10,11 +10,11 @@
 	<classpathentry kind="lib" path="lib/httpclient-cache-4.2.1.jar"/>
 	<classpathentry kind="lib" path="lib/httpcore-4.2.1.jar"/>
 	<classpathentry kind="lib" path="lib/httpmime-4.2.1.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/Common-Lib"/>
 	<classpathentry kind="lib" path="lib/commons-io-1.4-sources.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang-2.5.jar"/>
 	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="lib/junit.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Bird_Common_Lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
