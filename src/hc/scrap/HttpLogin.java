@@ -1,4 +1,4 @@
-package data.scrap;
+package hc.scrap;
 
 import com.xdg.util.XmlUtil;
 import org.apache.commons.lang.StringUtils;

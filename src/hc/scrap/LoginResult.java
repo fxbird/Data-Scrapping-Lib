@@ -1,4 +1,4 @@
-package data.scrap;
+package hc.scrap;
 
 import org.apache.http.client.HttpClient;
 

@@ -1,8 +1,7 @@
-package data.scrap.util;
+package hc.scrap.util;
 
 import com.xdg.util.ArrayUtil;
 import com.xdg.util.PathUtil;
-import org.apache.commons.lang.ArrayUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 

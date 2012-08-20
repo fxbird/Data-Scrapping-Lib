@@ -1,8 +1,8 @@
-package data.scrap;
+package hc.scrap;
 
 import com.xdg.util.*;
-import data.scrap.util.GetUtil;
-import data.scrap.util.HeaderUtil;
+import hc.scrap.util.GetUtil;
+import hc.scrap.util.HeaderUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpException;
@@ -55,7 +55,7 @@ public class Downloader {
             throw new HttpException("No file found at '" + url + "'");
         }
         byteSize = HeaderUtil.getSize(result1.getResponse());
-        fileName = HeaderUtil.getFileName(result1.getResponse(),url);
+        fileName = HeaderUtil.getFileName(result1.getResponse(), url);
         convertSizeUnit();
 
         log.debug("the file size is " + unitfiedSize + sizeUnit + "/" + byteSize + "B");
@@ -253,7 +253,7 @@ class DownloadWorker implements Callable<Object> {
         }
 
         invoked = true;
-        filePath = SysPropUtil.getTempDir() + HeaderUtil.getFileName(exeResult.getResponse(),url) + ".part" + id;
+        filePath = SysPropUtil.getTempDir() + HeaderUtil.getFileName(exeResult.getResponse(), url) + ".part" + id;
 
         log.debug("Thread " + id + " is download bytes of " + start + " to " + (start + length - 1) + ", path : " + filePath);
         HttpResponse response = exeResult.getResponse();

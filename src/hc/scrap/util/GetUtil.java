@@ -1,6 +1,6 @@
-package data.scrap.util;
+package hc.scrap.util;
 
-import data.scrap.ExeResult;
+import hc.scrap.ExeResult;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpHost;
@@ -10,6 +10,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.conn.params.ConnRoutePNames;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.PoolingClientConnectionManager;
+import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
@@ -31,6 +32,15 @@ public class GetUtil {
         }
 
         return result;
+    }
+
+    public static String getContent(String url){
+        try {
+            return EntityUtils.toString(doGet(url).getResponse().getEntity());
+        } catch (IOException e) {
+            log.error(e);
+            return "";
+        }
     }
 
     public static ExeResult doGet(HttpClient httpClient, String url) {

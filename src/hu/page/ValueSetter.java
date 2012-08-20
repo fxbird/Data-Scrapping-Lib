@@ -1,10 +1,9 @@
-package page;
+package hu.page;
 
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.html.HtmlPasswordInput;
 import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
-import exception.DataScrapperExp;
 import exception.ElementNotExistExp;
 
 public class ValueSetter {

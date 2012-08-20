@@ -1,4 +1,4 @@
-package data.scrap;
+package hc.scrap;
 
 public interface SizeUnit {
     int MB = 1024 * 1024;
